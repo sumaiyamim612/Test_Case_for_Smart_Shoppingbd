@@ -1,0 +1,69 @@
+Product Name,Smart Shoppingbd,TC Start Date: 18-09-2022,TC execution Start date: 18-09-2022,,,,Test Case summary,
+Module Name,User Management,TC End Date: 21-09-2022,TC execution End date: 21-09-2022,,,,Pass:30,
+,,TC Developed By: Sumaiya Islam Mim,Browser(tested): Yes,,,,Fail:2,
+,,,,,,,Not Executed:0,
+,,,,,,,Out of Scope:1,
+Test Case ID/Name,Test Case Description,Expected Result,Actual Result ,Test Data,Reproducing Step,Bug Screenshot,Status ,Dev Comments
+TC_SR_001,Input valid information,Should go to the next page.,Able to go into the next page.,"User Name: Sumaiya Islam Mim
+Email: sumaiya.shak6@gmail.com
+Password: ******
+Confirm Password: ******",,,Pass,
+TC_SR_002,All fields are blank,Should stay on the same page.,Should stay on the same page and error notified and also warn to fill it up.,Null,,,Pass,
+TC_SR_003,Checking without Username,Should not be able to register without Name.,Unable to Register,"Email: sumaiya.shak6@gmail.com
+Password: ******
+Confirm Password: ******",,,Pass,
+TC_SR_004,Checking without Email,Should not be able to register without Email.,Unable to Register,"Full Name: Sumaiya Islam Mim
+Password: ******
+Confirm Password: ******",,,Pass,
+TC_SR_005,Checking without Password,Should not be able to register without Phone Number.,Unable to Register,"Full Name: Sumaiya Islam Mim
+Email: sumaiya.shak6@gmail.com
+Confirm Password: ***********",,,Pass,
+TC_SR_006,Checking without Confirm Password,Should not be able to register without Confirm Password.,Unable to Register,"User Name: Sumaiya Islam Mim
+Email: sumaiya.shak6@gmail.com
+Password: ******
+",,,Pass,
+TC_SR_007,Checking an invalid Email,Should not able to register.,Unable to Register,"User Name: Sumaiya Islam Mim
+Email: sumaiya.shak6@vshj.com
+Password: ******
+Password: ******",,,Pass,
+TC_SR_008,Checking All small letter in Username,Should able to register,Able to register,"User Name: sumaiya islam
+Email: smim414@gmail.com
+Password: ******
+Password: ******",,,Pass,
+TC_SR_009,Checking capital letter in Email,Should able to register,Able to register,"User Name: sumaiyaMim
+Email: Sumaiya35-2322@diu.edu.bd
+Password: ******
+Password: ******",Go to URL with Browser<input Email with capital letter and also input all required fields<click on register,https://drive.google.com/drive/folders/1kvxuoCesLBCg7yaBvPbAreczZGWYTp4q?usp=sharing,Fail,
+TC_SR_010,not fulfil Password condition,Should able to register,unable to Register with warn,Enter password: 12345,,,Pass,
+TC_SR_011,Checking a weak password,Should able to register,unable to Register with warn,Enter password:123456,,,Pass,
+TC_SR_012,Checking using special character in Password,Should able to register.,Able to Register,Enter password:sa123*,,,Pass,
+TC_SR_013,Checking using number in password,Should able to register.,Able to Register,Enter password:sa1234,,,Pass,
+TC_SR_014,Checking a wrong confirm password,Should not able to register.,Unable to Register with warn,"Enter password:abc123456
+Confirm Password: abc",,,Pass,
+TC_SR_015,Checking Same Username,Should not able to register.,Unable to Register with warn,"User Name: Sumaiya Islam Mim
+Email: sumaiya.shak6@gmail.com
+Password: ******
+Confirm Password: ******",,,Pass,
+TC_SR_016,Checking Same Email,Should not able to register.,Unable to Register with warn,"User Name: Sumaiya Islam Mim
+Email: sumaiya.shak6@gmail.com
+Password: ******
+Confirm Password: ******",,,Pass,
+TC_SR_017,Checking Phone number,no field,,,,,Out of scope,
+TC_SR_018,Checking privacy policy,should go to privacy policy page,Able to go,,,,Pass,
+TC_SR_019,Checking Already a member button,Should have join button and worked,Got Blank button but worked as well,,Go to URL with Browser<input all required fields<Click already a member button,https://drive.google.com/file/d/1fKPDEPojbL2roSMWSk5n7LEBHYC0_xCe/view?usp=sharing,Fail,
+TC_SR_020,Input valid information,Should go to the home page,Able to go to the home page,"Username : Sumaiya Islam mim
+Enter password here: ******",,,Pass,
+TC_SR_021,All fields are blank,Error Occured,Show Error ,Null,,,Pass,
+TC_SR_022,Verifying keyboard button enter functionality.,Error Occured,Show Error ,Null,,,Pass,
+TC_SR_023,checking special character in user name ,Error Occured,Show Error ,Username:@@£$,,,Pass,
+TC_SR_024,Checking Space in Email field,Should not be considered as a character ,Show Error ,Email: sumaiya 987@gmail.com,,,Pass,
+TC_SR_025,Checking cursor moves to the next field when Enter is pressed,No Error,Able to go,,,,Pass,
+TC_SL_026,Login with  wrong username,Error Occured,Show Error ,"username: Mim
+Enter password here: *******",,,Pass,
+TC_SL_027,Login with  wrong password,Error Occured,Show Error ,password:123,,,Pass,
+TC_SL_028,not click remeber me option,No error,Able to log in,,,,Pass,
+TC_SL_029,Checking Forget password option,should go to reset password page,Able to go,,,,Pass,
+TC_SL_030,Checking privacy policy,should go to privacy policy page,Able to go,,,,Pass,
+TC_SL_031,Checking not a member button,Should have sign up button and worked,Got sign up button and worked as well,,,,Pass,
+TC_SL_032,Checking 'Remember Me' button is Auto-Enabled or Not.,Should not be,worked as expected,,,,Pass,
+TC_SL_033,Checking cursor moves to the next field when Enter is pressed,No error,Able to go,,,,Pass,
