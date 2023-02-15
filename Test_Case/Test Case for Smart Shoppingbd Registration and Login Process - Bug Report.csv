@@ -1,0 +1,9 @@
+                             Bug Report
+TC_SR_009
+Issue: Checking capital letter in Email
+Reproducive steps: Go to URL with Browser<input Email with capital letter and also input all required fields<click on register
+Env: production
+Module: User Management
+Severity:' P1
+Screenshot: https://drive.google.com/drive/folders/1kvxuoCesLBCg7yaBvPbAreczZGWYTp4q?usp=sharing
+Responsible QA: Sumaiya Islam Mim
